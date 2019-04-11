@@ -1,0 +1,109 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "teeth brushing",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "recordBrushing",
+                    "slots": [
+                        {
+                            "name": "smallchiName",
+                            "type": "smallchiName"
+                        }
+                    ],
+                    "samples": [
+                        "record {smallchiName} brushed her teeth",
+                        "{smallchiName} brushed her teeth",
+                        "remember {smallchiName} brushed her teeth"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getLastBrushed",
+                    "slots": [
+                        {
+                            "name": "smallchiName",
+                            "type": "smallchiName"
+                        }
+                    ],
+                    "samples": [
+                        "when did {smallchiName} brush her teeth",
+                        "when did {smallchiName} last brush her teeth"
+                    ]
+                },
+                {
+                    "name": "getBrushedOnDay",
+                    "slots": [
+                        {
+                            "name": "smallchiName",
+                            "type": "smallchiName"
+                        },
+                        {
+                            "name": "day",
+                            "type": "day"
+                        }
+                    ],
+                    "samples": [
+                        "did {smallchiName} brush her teeth {day}",
+                        "did {smallchiName} brush her teeth today {day}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "smallchiName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "helen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mary"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "day",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "yesterday"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "today"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
